@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>问答对话 - CCF-GESP学习助手</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar-container">
+        <div class="sidebar-header">
+            CCF-GESP学习助手
+        </div>
+        
+        <div class="sidebar-tabs">
+            <div class="sidebar-tab">
+                <i class="fas fa-book mr-1"></i> 知识点预习
+            </div>
+            <div class="sidebar-tab">
+                <i class="fas fa-tasks mr-1"></i> 习题练习
+            </div>
+            <div class="sidebar-tab active">
+                <i class="fas fa-comments mr-1"></i> 问答
+            </div>
+            <div class="sidebar-tab">
+                <i class="fas fa-file-alt mr-1"></i> 真题
+            </div>
+        </div>
+        
+        <div class="sidebar-content">
+            <button class="back-btn flex items-center mb-4 text-gray-600 hover:text-indigo-600">
+                <i class="fas fa-chevron-left mr-1"></i> 返回问答列表
+            </button>
+            
+            <div class="bg-indigo-50 p-3 rounded-md mb-4">
+                <p class="font-medium">问题: 如何理解递归函数?</p>
+                <div class="text-xs text-gray-500 mt-1">提问时间: 2023-03-15 14:30</div>
+            </div>
+            
+            <div class="bg-white p-3 rounded-md shadow-sm mb-4">
+                <div class="flex items-center mb-2">
+                    <div class="w-6 h-6 bg-indigo-600 rounded-full flex items-center justify-center text-white mr-2">
+                        <i class="fas fa-robot text-xs"></i>
+                    </div>
+                    <div class="font-medium">DeepSeek回答:</div>
+                </div>
+                
+                <div class="text-gray-700 text-sm">
+                    <p class="mb-2">递归函数是一种调用自身的函数。理解递归需要掌握:</p>
+                    <ol class="list-decimal pl-5 mb-3">
+                        <li>基本情况(Base case): 不再调用自身，直接返回结果</li>
+                        <li>递归情况: 将问题分解为更小的子问题</li>
+                    </ol>
+                    
+                    <p class="mb-2">例如计算阶乘:</p>
+                    <pre class="code-editor p-2 text-xs mb-2">
+function factorial(n) {
+  if (n <= 1) return 1;  // 基本情况
+  return n * factorial(n-1); // 递归情况
+}
+                    </pre>
+                    
+                    <p>理解递归的关键是跟踪函数调用栈，理解每一层如何依赖更小问题的解。</p>
+                </div>
+            </div>
+            
+            <div class="form-group mb-4">
+                <label class="form-label text-sm">追问:</label>
+                <textarea class="form-input h-20 text-sm" placeholder="有什么不理解的地方可以继续提问..."></textarea>
+            </div>
+            
+            <button class="btn btn-primary w-full">
+                <i class="fas fa-paper-plane mr-1"></i> 发送
+            </button>
+        </div>
+        
+        <div class="sidebar-footer">
+            <button class="settings-btn btn btn-secondary">
+                <i class="fas fa-cog mr-1"></i> 设置
+            </button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 

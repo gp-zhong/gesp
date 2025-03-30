@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>真题详情 - CCF-GESP学习助手</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar-container">
+        <div class="sidebar-header">
+            CCF-GESP学习助手
+        </div>
+        
+        <div class="sidebar-tabs">
+            <div class="sidebar-tab">
+                <i class="fas fa-book mr-1"></i> 知识点预习
+            </div>
+            <div class="sidebar-tab">
+                <i class="fas fa-tasks mr-1"></i> 习题练习
+            </div>
+            <div class="sidebar-tab">
+                <i class="fas fa-comments mr-1"></i> 问答
+            </div>
+            <div class="sidebar-tab active">
+                <i class="fas fa-file-alt mr-1"></i> 真题
+            </div>
+        </div>
+        
+        <div class="sidebar-content">
+            <button class="back-btn flex items-center mb-4 text-gray-600 hover:text-indigo-600">
+                <i class="fas fa-chevron-left mr-1"></i> 返回真题列表
+            </button>
+            
+            <h2 class="text-lg font-bold mb-2">2023年3月 CCF-GESP初级认证考试</h2>
+            <div class="text-xs text-gray-500 mb-4">考试时长: 120分钟 | 总分: 100分</div>
+            
+            <div class="card mb-4">
+                <h3 class="font-medium mb-3">第一部分: 选择题</h3>
+                
+                <div class="mb-4">
+                    <div class="flex">
+                        <span class="font-bold mr-1">1.</span>
+                        <div>
+                            <p class="mb-2">以下关于变量作用域的说法正确的是:</p>
+                            <div class="ml-4 space-y-1">
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 flex items-center justify-center rounded-full border border-gray-400 mr-2">
+                                        <div class="w-2 h-2 rounded-full bg-white"></div>
+                                    </div>
+                                    <span>A. 全局变量在函数内部不可访问</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 flex items-center justify-center rounded-full border border-gray-400 mr-2">
+                                        <div class="w-2 h-2 rounded-full bg-white"></div>
+                                    </div>
+                                    <span>B. 局部变量在函数外部可以访问</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 flex items-center justify-center rounded-full border border-gray-400 mr-2">
+                                        <div class="w-2 h-2 rounded-full bg-white"></div>
+                                    </div>
+                                    <span>C. 在函数内声明的变量默认是全局变量</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 flex items-center justify-center rounded-full border border-gray-400 mr-2">
+                                        <div class="w-2 h-2 rounded-full bg-white"></div>
+                                    </div>
+                                    <span>D. 在代码块中用let声明的变量具有块级作用域</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="text-indigo-600 text-sm hover:underline mt-2 flex items-center">
+                        <i class="fas fa-eye mr-1"></i> 查看答案与解析
+                    </button>
+                </div>
+                
+                <div class="mb-4">
+                    <div class="flex">
+                        <span class="font-bold mr-1">2.</span>
+                        <div>
+                            <p class="mb-2">下列代码的输出结果是:</p>
+                            <pre class="code-editor p-2 text-xs mb-2">
+let arr = [1,2,3];
+console.log(arr.map(x => x*2));
+                            </pre>
+                            <div class="ml-4 space-y-1">
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 flex items-center justify-center rounded-full border border-gray-400 mr-2">
+                                        <div class="w-2 h-2 rounded-full bg-white"></div>
+                                    </div>
+                                    <span>A. [1,2,3]</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 flex items-center justify-center rounded-full border border-gray-400 mr-2">
+                                        <div class="w-2 h-2 rounded-full bg-white"></div>
+                                    </div>
+                                    <span>B. [2,4,6]</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 flex items-center justify-center rounded-full border border-gray-400 mr-2">
+                                        <div class="w-2 h-2 rounded-full bg-white"></div>
+                                    </div>
+                                    <span>C. [3,6,9]</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 flex items-center justify-center rounded-full border border-gray-400 mr-2">
+                                        <div class="w-2 h-2 rounded-full bg-white"></div>
+                                    </div>
+                                    <span>D. undefined</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="text-indigo-600 text-sm hover:underline mt-2 flex items-center">
+                        <i class="fas fa-eye mr-1"></i> 查看答案与解析
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidebar-footer">
+            <button class="settings-btn btn btn-secondary">
+                <i class="fas fa-cog mr-1"></i> 设置
+            </button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>问答讨论 - CCF-GESP学习助手</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar-container">
+        <div class="sidebar-header">
+            CCF-GESP学习助手
+        </div>
+        
+        <div class="sidebar-tabs">
+            <div class="sidebar-tab">
+                <i class="fas fa-book mr-1"></i> 知识点预习
+            </div>
+            <div class="sidebar-tab">
+                <i class="fas fa-tasks mr-1"></i> 习题练习
+            </div>
+            <div class="sidebar-tab active">
+                <i class="fas fa-comments mr-1"></i> 问答
+            </div>
+            <div class="sidebar-tab">
+                <i class="fas fa-file-alt mr-1"></i> 真题
+            </div>
+        </div>
+        
+        <div class="sidebar-content">
+            <div class="flex mb-4">
+                <button class="flex-1 py-2 px-3 bg-indigo-600 text-white rounded-l-md flex items-center justify-center">
+                    <i class="fas fa-keyboard mr-1"></i> 输入文字
+                </button>
+                <button class="flex-1 py-2 px-3 bg-gray-200 text-gray-700 rounded-r-md flex items-center justify-center">
+                    <i class="fas fa-camera mr-1"></i> 拍照上传
+                </button>
+            </div>
+            
+            <div class="form-group mb-4">
+                <label class="form-label">输入您的问题:</label>
+                <textarea class="form-input h-24" placeholder="请输入您的问题或粘贴代码..."></textarea>
+            </div>
+            
+            <button class="btn btn-primary w-full mb-4">
+                <i class="fas fa-paper-plane mr-1"></i> 提交问题
+            </button>
+            
+            <h3 class="font-medium mb-2">历史问答:</h3>
+            
+            <div class="list-item flex justify-between">
+                <div>
+                    <i class="fas fa-question-circle text-indigo-600 mr-1"></i>
+                    如何理解递归函数?
+                </div>
+                <div class="text-xs text-gray-500">3天前</div>
+            </div>
+            
+            <div class="list-item flex justify-between">
+                <div>
+                    <i class="fas fa-question-circle text-indigo-600 mr-1"></i>
+                    排序算法的时间复杂度分析
+                </div>
+                <div class="text-xs text-gray-500">5天前</div>
+            </div>
+            
+            <div class="list-item flex justify-between">
+                <div>
+                    <i class="fas fa-question-circle text-indigo-600 mr-1"></i>
+                    动态规划与贪心算法的区别
+                </div>
+                <div class="text-xs text-gray-500">1周前</div>
+            </div>
+        </div>
+        
+        <div class="sidebar-footer">
+            <button class="settings-btn btn btn-secondary">
+                <i class="fas fa-cog mr-1"></i> 设置
+            </button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 

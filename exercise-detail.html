@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>习题详情 - CCF-GESP学习助手</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar-container">
+        <div class="sidebar-header">
+            CCF-GESP学习助手
+        </div>
+        
+        <div class="sidebar-tabs">
+            <div class="sidebar-tab">
+                <i class="fas fa-book mr-1"></i> 知识点预习
+            </div>
+            <div class="sidebar-tab active">
+                <i class="fas fa-tasks mr-1"></i> 习题练习
+            </div>
+            <div class="sidebar-tab">
+                <i class="fas fa-comments mr-1"></i> 问答
+            </div>
+            <div class="sidebar-tab">
+                <i class="fas fa-file-alt mr-1"></i> 真题
+            </div>
+        </div>
+        
+        <div class="sidebar-content">
+            <div class="flex justify-between items-center mb-4">
+                <button class="back-btn flex items-center text-gray-600 hover:text-indigo-600">
+                    <i class="fas fa-chevron-left mr-1"></i> 返回习题列表
+                </button>
+                <span class="text-sm text-gray-500">习题 3/20</span>
+            </div>
+            
+            <div class="card">
+                <h2 class="text-lg font-bold mb-2">编写一个函数计算1到n的和</h2>
+                
+                <p class="text-gray-700 mb-4">
+                    要求：使用循环实现一个函数 sum(n)，返回从1加到n的和。
+                </p>
+                
+                <button class="btn btn-secondary text-sm mb-4">
+                    <i class="fas fa-lightbulb mr-1"></i> 查看提示
+                </button>
+                
+                <div class="hint-box hidden bg-yellow-50 p-3 rounded-md mb-4 text-sm">
+                    <p>提示：使用for循环从1遍历到n，累加每个数字</p>
+                </div>
+                
+                <div class="mb-4">
+                    <div class="flex justify-between items-center mb-1">
+                        <h3 class="font-medium">代码编辑区</h3>
+                        <button class="text-xs text-gray-500 hover:text-indigo-600">
+                            <i class="fas fa-expand mr-1"></i> 全屏编辑
+                        </button>
+                    </div>
+                    <div class="code-editor p-3 text-sm rounded">
+function sum(n) {
+  // 在此编写代码
+}
+                    </div>
+                </div>
+                
+                <button class="submit-btn btn btn-primary w-full">
+                    <i class="fas fa-paper-plane mr-1"></i> 提交答案
+                </button>
+            </div>
+        </div>
+        
+        <div class="sidebar-footer">
+            <button class="settings-btn btn btn-secondary">
+                <i class="fas fa-cog mr-1"></i> 设置
+            </button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 

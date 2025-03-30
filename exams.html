@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GESP真题 - CCF-GESP学习助手</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar-container">
+        <div class="sidebar-header">
+            CCF-GESP学习助手
+        </div>
+        
+        <div class="sidebar-tabs">
+            <div class="sidebar-tab">
+                <i class="fas fa-book mr-1"></i> 知识点预习
+            </div>
+            <div class="sidebar-tab">
+                <i class="fas fa-tasks mr-1"></i> 习题练习
+            </div>
+            <div class="sidebar-tab">
+                <i class="fas fa-comments mr-1"></i> 问答
+            </div>
+            <div class="sidebar-tab active">
+                <i class="fas fa-file-alt mr-1"></i> 真题
+            </div>
+        </div>
+        
+        <div class="sidebar-content">
+            <div class="flex items-center justify-between mb-4">
+                <div class="relative">
+                    <select class="form-input pr-8 py-1 pl-2 appearance-none">
+                        <option>2023</option>
+                        <option>2022</option>
+                        <option>2021</option>
+                    </select>
+                    <div class="absolute right-2 top-2 pointer-events-none">
+                        <i class="fas fa-chevron-down text-gray-400 text-xs"></i>
+                    </div>
+                    <label class="text-xs text-gray-500 block">选择年份</label>
+                </div>
+                
+                <div class="relative">
+                    <select class="form-input pr-8 py-1 pl-2 appearance-none">
+                        <option>初级</option>
+                        <option>中级</option>
+                        <option>高级</option>
+                    </select>
+                    <div class="absolute right-2 top-2 pointer-events-none">
+                        <i class="fas fa-chevron-down text-gray-400 text-xs"></i>
+                    </div>
+                    <label class="text-xs text-gray-500 block">选择级别</label>
+                </div>
+            </div>
+            
+            <h3 class="font-medium mb-2">真题列表:</h3>
+            
+            <div class="list-item list-item-radio">
+                <div class="w-5 h-5 flex items-center justify-center rounded-full border border-gray-400">
+                    <div class="w-3 h-3 rounded-full bg-white"></div>
+                </div>
+                <span>2022年3月 CCF-GESP初级认证考试</span>
+            </div>
+            
+            <div class="list-item list-item-radio">
+                <div class="w-5 h-5 flex items-center justify-center rounded-full border border-gray-400">
+                    <div class="w-3 h-3 rounded-full bg-white"></div>
+                </div>
+                <span>2022年9月 CCF-GESP初级认证考试</span>
+            </div>
+            
+            <div class="list-item list-item-radio">
+                <div class="w-5 h-5 flex items-center justify-center rounded-full border border-indigo-600">
+                    <div class="w-3 h-3 rounded-full bg-indigo-600"></div>
+                </div>
+                <span class="font-medium text-indigo-600">2023年3月 CCF-GESP初级认证考试</span>
+            </div>
+            
+            <div class="list-item list-item-radio">
+                <div class="w-5 h-5 flex items-center justify-center rounded-full border border-gray-400">
+                    <div class="w-3 h-3 rounded-full bg-white"></div>
+                </div>
+                <span>2023年9月 CCF-GESP初级认证考试</span>
+            </div>
+            
+            <div class="text-center text-gray-500 text-xs mt-4">
+                <i class="fas fa-info-circle mr-1"></i> 点击试卷查看详情和解析
+            </div>
+        </div>
+        
+        <div class="sidebar-footer">
+            <button class="settings-btn btn btn-secondary">
+                <i class="fas fa-cog mr-1"></i> 设置
+            </button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 

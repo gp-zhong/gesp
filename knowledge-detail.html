@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知识点详情 - CCF-GESP学习助手</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar-container">
+        <div class="sidebar-header">
+            CCF-GESP学习助手
+        </div>
+        
+        <div class="sidebar-tabs">
+            <div class="sidebar-tab active">
+                <i class="fas fa-book mr-1"></i> 知识点预习
+            </div>
+            <div class="sidebar-tab">
+                <i class="fas fa-tasks mr-1"></i> 习题练习
+            </div>
+            <div class="sidebar-tab">
+                <i class="fas fa-comments mr-1"></i> 问答
+            </div>
+            <div class="sidebar-tab">
+                <i class="fas fa-file-alt mr-1"></i> 真题
+            </div>
+        </div>
+        
+        <div class="sidebar-content">
+            <button class="back-btn flex items-center mb-4 text-gray-600 hover:text-gray-800">
+                <i class="fas fa-chevron-left mr-1"></i> 返回知识点列表
+            </button>
+            
+            <h2 class="text-xl font-bold mb-4 text-gray-900">数组与字符串</h2>
+            
+            <div class="card">
+                <h3 class="text-lg font-semibold mb-2 text-gray-800">数组概念</h3>
+                <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                    <li>定义与特性</li>
+                    <li>数组的声明与初始化</li>
+                    <li>数组的操作与遍历</li>
+                </ul>
+                
+                <div class="mt-4 text-sm text-gray-700">
+                    <p>数组是一种用于存储多个相同类型数据的数据结构。在JavaScript中，数组可以保存任意类型的数据。</p>
+                    <pre class="code-editor mt-2 text-xs">
+// 数组声明与初始化
+let numbers = [1, 2, 3, 4, 5];
+let fruits = ['apple', 'banana', 'orange'];
+
+// 数组访问
+console.log(numbers[0]); // 输出: 1
+console.log(fruits[1]);  // 输出: banana
+
+// 数组遍历
+for(let i = 0; i < numbers.length; i++) {
+    console.log(numbers[i]);
+}
+
+// 更现代的遍历方法
+numbers.forEach(num => console.log(num));
+                    </pre>
+                </div>
+            </div>
+            
+            <div class="card mt-4">
+                <h3 class="text-lg font-semibold mb-2 text-gray-800">字符串处理</h3>
+                <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                    <li>字符串基本操作</li>
+                    <li>常用字符串函数</li>
+                    <li>字符串算法示例</li>
+                </ul>
+                
+                <div class="mt-4 text-sm text-gray-700">
+                    <p>字符串是用于表示文本的数据类型，在JavaScript中是不可变的。</p>
+                    <pre class="code-editor mt-2 text-xs">
+// 字符串创建
+let greeting = "Hello, World!";
+let name = 'Alice';
+
+// 字符串连接
+let message = greeting + " My name is " + name;
+let template = `${greeting} My name is ${name}`; // 模板字符串
+
+// 常用字符串方法
+console.log(greeting.length);     // 长度
+console.log(greeting.toUpperCase()); // 转大写
+console.log(greeting.split(', ')); // 分割
+console.log(greeting.includes('Hello')); // 包含检查
+                    </pre>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidebar-footer">
+            <button class="settings-btn btn btn-secondary">
+                <i class="fas fa-cog mr-1"></i> 设置
+            </button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
